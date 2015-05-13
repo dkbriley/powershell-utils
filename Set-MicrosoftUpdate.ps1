@@ -1,5 +1,22 @@
 ﻿function Set-MicrosoftUpdate
 {
+    <#
+        .SYNOPSIS 
+        Controls Microsoft Update settings
+
+        .PARAMETER Enabled
+        Enable or disable Microsoft Update
+
+        .INPUTS
+        None
+
+        .OUTPUTS
+        None
+
+        .EXAMPLE
+        C:\PS> Set-MicrosoftUpdate -Enabled $true
+    #>
+
     param([bool]$Enabled)
 
     $ServiceManager = New-Object -ComObject Microsoft.Update.ServiceManager

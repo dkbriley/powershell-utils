@@ -1,5 +1,22 @@
 ﻿function Set-ControlPanel
 {
+    <#
+        .SYNOPSIS 
+        Configures the behaviour of the Control Panel applet
+
+        .PARAMETER ViewMode
+        Specifies the initial view that Control Panel will open in
+
+        .INPUTS
+        None
+
+        .OUTPUTS
+        None
+
+        .EXAMPLE
+        C:\PS> Set-ControlPanel -ViewMode SmallIcon
+    #>
+
     param
     (
         [Parameter(Mandatory=$false)]
